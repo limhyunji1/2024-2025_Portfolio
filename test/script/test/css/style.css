@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* 초기화 */
+.clearfix:after { display: block; content: ''; clear: both; }
+body, ul, li { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+h1, h2, h3, h4, h5, h6, p { font-weight: normal; font-size: inherit; margin: 0; padding: 0; }
+
+/* wrap, header, banner, content1, content2, footer */
+
+#wrap { width: 1200px; margin: 0 auto; }
+#header { width: 100%; height: 100px; background: #999; }
+#banner { margin-top: 5px; width: 100%; height: 380px; background: #666; overflow: hidden; }
+#content1 { margin-top: 20px; width: 100%; height: 200px; background: #555; }
+#content2 { margin-top: 30px; width: 100%; height: 300px; background: #444; }
+#footer { margin-top: 40px; width: 100%; height: 200px; background: #333; }
+
+
+/* 헤더 */
+#header .logo { float: left; width: 200px; height: 100px; background: #888; }
+#header .logo img { padding-left: 25px; width: 150px; }
+#header .nav { float: right; width: 720px; height: 100px; background: #777; }
+#header .nav ul li { float: left; text-align: center; width: 140px; }
+#header .nav ul li a { display: block; padding: 20px; }
+#header .nav ul li a:hover { background: #000; color: #fff; }
+#header .nav > ul > li > a { font-weight: bold; } 
+#header .nav .submenu li { background: #f1f1f1; }
+
+/* 배너 */
+#banner img { width: 100%; }
+#banner .slideList { }
+#banner .slideList .slideImg { position: relative; }
+#banner .slideList .slideImg h3 { position: absolute; left: 0; top: 0; }
+
+
+/* 콘텐츠1 */
+#content1 .con_l { width: 48%; height: 100%; border: 1px solid #000; float: left; }
+.con_l .tab_menu ul li { position: relative; display: inline-block; margin: 20px; }
+.con_l .tab_menu ul li.active:after { position: absolute; left: 0; top: 0; content: ''; background: #000;
+width: 100%; height: 2px; }
+
+.con_l .tab_con .con { background: #f1f1f1; height: 150px; }
+.con_l .tab_con .con div { float: left; width: 20.3333%; margin: 2% 2% 4% 4%; }
+.con_l .tab_con .con div:last-child { margin-right: 0; margin-left: 0; }
+.con_l .tab_con .con img { width: 100px; }
+
+.con_l .tab_con .con ul li { padding-left: 50px; display: inline-block; width: 70%; }
+.con_l .tab_con .con ul li span { float: right;  }
+
+
+#content1 .con_r { width: 48%; height: 100%; border: 1px solid #000; float: right; }
+
+
+
+

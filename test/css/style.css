@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* { margin: 0; padding: 0; font-size: 15px; font-weight: normal; color: #2c2c2c; font-family: "나눔고딕"; }
+img { display: block; border: none; }
+ul, li { list-style: none; }
+a { text-decoration: none; }
+address { font-style: normal; }
+.clearfix:after { display: block; content: ""; clear: both; }
+
+#wrap { margin: 0 auto; width: 1200px; height: 700px; }
+#header { position: relative; height: 100px; }
+#header .logo { float: left; width: 200px; height: 100%;}
+#header .logo img { margin-top: 5px; width: 200px; }
+#header .nav { margin-top: 48px; float: right; width: 550px; }
+
+.nav .mainmenu { float: right; }
+.nav .mainmenu > li { width: 120px; text-align: center; float: left; }
+.nav > ul > li > a { display: block; font-weight: bold; transition: all .5s; padding: 15px; border: 1px solid #000; border-left: 0; box-sizing: border-box; }
+.nav > ul > li:first-child { border-left: 1px solid #000; box-sizing: border-box; }
+.nav > ul > li:hover a { background: #000; color: #fff; }
+
+.nav .submenu { display: none; z-index: 1000; float: right; position: absolute; right: 0; top: 0; width: 100%; background: #f1f1f1; top: 100px; }
+.nav .submenu .sub_frame { float: right; }
+
+.nav .submenu .sub_frame ul { float: left; }
+.nav .submenu .sub_frame ul li { width: 120px; text-align: center; }
+.nav .submenu .sub_frame > ul > li > a { display: block; padding: 15px; transition: all .5s; }
+.nav .submenu .sub_frame > ul > li > a:hover { background: #999; color: #000; }
+
+
+
+
+#banner { position: relative; width: 100%; height: 300px; overflow: hidden; }
+#banner img { width: 100%; }
+#banner .txt { z-index: 900; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); text-align: center; height: 100px; width: 300px; background: rgba(255,255,255,.8); border-radius: 20px; }
+#banner .txt h2 { font-weight: bold; font-size: 23px; padding-top: 12px; }
+#banner .txt p { font-size: 14px; padding-top: 5px; }
+#banner .slideList { position: relative;  }
+#banner .slideList .slideImg { position: absolute; width: 1200px; }
+
+#content { width: 100%; height: 200px; }
+#content .notice { float: left; width: 49%; height: 100%; }
+.notice .tabBtn { }
+.notice .tabBtn > ul > li { text-align: center; position: relative; display: inline-block; }
+.notice .tabBtn ul > li.active > a { color: #000; }
+.notice .tabBtn ul > li.active:after { position: absolute; left: 0; top: 0; content:""; width: 100%; height: 3px; background: #000; }
+.notice .tabBtn ul > li > a { display: inline-block; width: 100%; font-weight: bold; padding: 15px 20px 10px 0; }
+
+.notice .tabCon { width: 100%; height: 155px; border: 1px solid #000; box-sizing: border-box; }
+.notice .tabCon .con a { float: left; padding: 5px 40px 0 25px; }
+.notice .tabCon .con img { width: 130px; }
+.notice .tabCon .con a p { text-align: center; }
+.notice .tabCon .con > ul { padding-left: 30px; padding-top: 20px; }
+.notice .tabCon .con > ul > li { width: 120px; }
+.notice .tabCon .con > ul > li { width: 60%;}
+.notice .tabCon .con > ul > span { float: right; width: 30%; color: #666; }
+
+#content .banner2 { float: right; width: 49%; height: 100%; background: url("../images/2banner.jpg") no-repeat; }
+
+
+
+#footer { width: 100%; height: 100px; }
+#footer .f_logo { float: left; width: 15%; height: 100%; background: #000; }
+#footer .f_logo img { width: 180px; padding-top: 15px; }
+#footer .copy { float: left; width: 70%; height: 100px; }
+#footer .copy address { padding-top: 25px; padding-left: 20px;  }
+#footer .copy address p { font-size: 14px; padding-right: 5px; }
+#footer .copy address p.line { margin-right: 3px; float: left; border-right: 1px solid #888; }
+
+
+#footer .fam { float: left; width: 15%; height: 100px; background: #f1f1f1; }
+#footer .fam select { width: 100%; margin-top: 25px; height: 50px; } 
+
+
+.layer_bg { display: none; z-index: 1000; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .8); }
+.layer_bg .layer { position: absolute; left: 20%; top: 25px; width: 500px; height: 500px; background: #fff; }
+.layer .close { position: absolute; bottom: 20px; right: 20px; }
